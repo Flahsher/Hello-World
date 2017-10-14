@@ -12,6 +12,7 @@ int main(){
 	printf("w=%d\n",w);
 	printf("u=%f\n",u);
 	printf("DBL_MAX=%le",DBL_MAX);
+	printf("DBL_MIN=%le",DBL_MIN);
 	
 	return 0;
 }
