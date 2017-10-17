@@ -2,13 +2,15 @@
 int main(void){
 	float a,b,c,d,e,f;
 	float x,y;
-	printf("有方程组：\n");
+	
+	printf("鏈夋柟绋嬬粍锛歕n");
 	printf("	ax+by=c\n");
 	printf("	dx+ey=f\n");
-	printf("请输入相应的a,b,c,d,e,f值\n");
+	printf("璇疯緭鍏ョ浉搴旂殑a,b,c,d,e,f鍊糪n");
 	scanf("%f%f%f%f%f%f",&a,&b,&c,&d,&e,&f);
+	
 	if(a*e-d*b==0){
-		printf("此方程无唯一解！");
+		printf("姝ゆ柟绋嬫棤鍞竴瑙ｏ紒");
 		return 0;
 	}
 	x=(c*e-b*f)/(a*e-b*d);
