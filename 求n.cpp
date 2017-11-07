@@ -1,18 +1,15 @@
 #include  <stdio.h>
+#include  <stdlib.h>
 int count1(int n);
 
 int main(){
-	int n;
-	printf("ÇëÊäÈënµÄÖµ£º\n");
-	scanf("%d",&n);
-	for(int i=1;i<=n;i++){
-		int sum=0;
-		for(int j=1;j<=i;j++){
-			sum+=count1(j);
-		}
-//		printf("%d\t%d\n",i,sum);
-		if(sum==i){
-			printf("\nÇóµÃ½á¹ûÎª£º%d",i);
+	int sum=0;
+	for(int i=1;i<=INT_MAX;i++){	
+		sum+=count1(i);
+		printf("%d\t%d\n",i,sum);
+		if(sum==i && i!=1){
+			printf("\næ±‚å¾—å¤§äº1çš„æœ€å°ç»“æœä¸ºï¼š%d",i);
+			break;
 		}
 	}
 	return 0;
